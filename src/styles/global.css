@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green-dark: #1a2e1a;
+  --green-mid: #2d5a2d;
+  --green-accent: #4caf50;
+  --green-light: #81c784;
+  --green-pale: #e8f5e9;
+  --amber: #ff8f00;
+  --amber-light: #ffecb3;
+  --red: #e53935;
+  --red-light: #ffebee;
+  --blue: #1e88e5;
+  --blue-light: #e3f2fd;
+  --bg: #f4f6f3;
+  --surface: #ffffff;
+  --surface-2: #f9faf8;
+  --border: #e0e8df;
+  --text-primary: #1a2e1a;
+  --text-secondary: #5a7a5a;
+  --text-muted: #8fa08f;
+  --sidebar-w: 260px;
+  --header-h: 68px;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(26,46,26,0.07);
+  --shadow-md: 0 6px 24px rgba(26,46,26,0.1);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5 { font-family: 'Syne', sans-serif; }
+
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }
+input, select, textarea { font-family: 'DM Sans', sans-serif; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+.fade-in { animation: fadeIn 0.4s ease forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.slide-in { animation: slideIn 0.3s ease forwards; }
+@keyframes slideIn { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: translateX(0); } }
